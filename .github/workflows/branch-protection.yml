@@ -35,10 +35,18 @@ jobs:
 
       - name: Check for large files
         run: |
-          # Check for files larger than 10MB
-          if find . -type f -size +10M -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/*" -not -path "./coverage/*"; then
+          # Check for files larger than 10MB (excluding build artifacts and generated files)
+          if find . -type f -size +10M \
+            -not -path "./node_modules/*" \
+            -not -path "./.git/*" \
+            -not -path "./dist/*" \
+            -not -path "./coverage/*" \
+            -not -path "./.next/*" \
+            -not -path "./build/*" \
+            -not -name "*.log" \
+            -not -name "*.cache"; then
             echo "❌ Found files larger than 10MB"
-            echo "Please use Git LFS for large files"
+            echo "Please use Git LFS for large files or add them to .gitignore"
             exit 1
           else
             echo "✅ No large files found"
