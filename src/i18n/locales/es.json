@@ -10,6 +10,7 @@
   "home": {
     "description": "Bienvenido al servidor SPH Squad. Aquí encontrarás todas las reglas y directrices para una experiencia de juego justa y divertida para todos los jugadores.",
     "features": {
+      "title": "Características",
       "rules": {
         "title": "Reglas Completas",
         "description": "Todas las reglas del servidor organizadas por categorías para fácil consulta."
@@ -40,6 +41,7 @@
   },
   "support": {
     "description": "¡Únete a nuestra comunidad y apóyanos en nuestras plataformas! Conecta con otros jugadores, sigue nuestros streams y contribuye al crecimiento del servidor.",
+    "socialLinks": "Enlaces de Redes Sociales",
     "discord": {
       "description": "Únete a nuestro servidor de Discord para chatear, organizar partidas y estar al día con las novedades."
     },

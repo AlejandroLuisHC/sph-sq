@@ -13,21 +13,24 @@ const RuleList: React.FC<RuleListProps> = ({ sectionKey }) => {
   }) as string[];
 
   return (
-    <div className="rule-container flex flex-col gap-2 sm:gap-3">
+    <ul className="rule-container flex flex-col gap-2 sm:gap-3">
       {rules.map((rule, index) => (
-        <div
+        <li
           key={index}
           className="flex items-start gap-2 sm:gap-3 py-1.5 sm:py-2"
         >
-          <div className="text-yellow-400 text-sm sm:text-base font-bold mt-0.5 flex-shrink-0">
+          <span
+            className="text-yellow-400 text-sm sm:text-base font-bold mt-0.5 flex-shrink-0"
+            aria-hidden="true"
+          >
             ✓
-          </div>
-          <div className="rule-text text-gray-300 text-sm sm:text-base leading-relaxed flex-1 break-words overflow-wrap-anywhere">
+          </span>
+          <span className="rule-text text-gray-300 text-sm sm:text-base leading-relaxed flex-1 break-words overflow-wrap-anywhere">
             {rule}
-          </div>
-        </div>
+          </span>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 };
 

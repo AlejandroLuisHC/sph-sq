@@ -7,11 +7,13 @@ const Sanctions: React.FC = () => {
   return (
     <div className="py-8 sm:py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-5 md:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 text-center mb-8 sm:mb-12 uppercase tracking-wide px-4">
-          {t("nav.sanctions")}
-        </h2>
+        <header className="text-center mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 uppercase tracking-wide px-4">
+            {t("nav.sanctions")}
+          </h1>
+        </header>
 
-        <div className="bg-gray-800 rounded-lg p-6 sm:p-8 border border-yellow-400">
+        <section className="bg-gray-800 rounded-lg p-6 sm:p-8 border border-yellow-400">
           <div className="text-center">
             <div className="mb-4 sm:mb-6">
               <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-yellow-400 rounded-full mb-3 sm:mb-4">
@@ -29,9 +31,9 @@ const Sanctions: React.FC = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3 sm:mb-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3 sm:mb-4">
                 {t("sanctions.comingSoon.title")}
-              </h3>
+              </h2>
             </div>
 
             <p className="text-gray-300 text-base sm:text-lg mb-4 sm:mb-6 px-4">
@@ -39,30 +41,38 @@ const Sanctions: React.FC = () => {
             </p>
 
             <div className="bg-gray-700 rounded-lg p-4 sm:p-6 border border-gray-600">
-              <h4 className="text-yellow-400 font-bold text-base sm:text-lg mb-3">
+              <h3 className="text-yellow-400 font-bold text-base sm:text-lg mb-3">
                 {t("sanctions.features.title")}
-              </h4>
+              </h3>
               <ul className="text-gray-300 space-y-2 text-left">
                 <li className="flex items-center">
-                  <span className="text-yellow-400 mr-2">•</span>
+                  <span className="text-yellow-400 mr-2" aria-hidden="true">
+                    •
+                  </span>
                   <span className="text-sm sm:text-base">
                     {t("sanctions.features.sanctions")}
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <span className="text-yellow-400 mr-2">•</span>
+                  <span className="text-yellow-400 mr-2" aria-hidden="true">
+                    •
+                  </span>
                   <span className="text-sm sm:text-base">
                     {t("sanctions.features.appeals")}
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <span className="text-yellow-400 mr-2">•</span>
+                  <span className="text-yellow-400 mr-2" aria-hidden="true">
+                    •
+                  </span>
                   <span className="text-sm sm:text-base">
                     {t("sanctions.features.reports")}
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <span className="text-yellow-400 mr-2">•</span>
+                  <span className="text-yellow-400 mr-2" aria-hidden="true">
+                    •
+                  </span>
                   <span className="text-sm sm:text-base">
                     {t("sanctions.features.history")}
                   </span>
@@ -70,7 +80,7 @@ const Sanctions: React.FC = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

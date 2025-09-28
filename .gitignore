@@ -15,6 +15,9 @@ dist-ssr
 # Coverage reports
 coverage/
 
+# Vite cache
+.vite/
+
 .env
 
 # Editor directories and files

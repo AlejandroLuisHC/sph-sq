@@ -42,24 +42,33 @@ const Support: React.FC = () => {
   return (
     <div className="py-8 sm:py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-5 md:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 text-center mb-8 sm:mb-12 uppercase tracking-wide px-4">
-          {t("nav.support")}
-        </h2>
+        <header className="text-center mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 uppercase tracking-wide px-4">
+            {t("nav.support")}
+          </h1>
+        </header>
 
-        <div className="text-center mb-8 sm:mb-12">
+        <section className="text-center mb-8 sm:mb-12">
           <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
             {t("support.description")}
           </p>
-        </div>
+        </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        <section
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8"
+          aria-labelledby="social-links-heading"
+        >
+          <h2 id="social-links-heading" className="sr-only">
+            {t("support.socialLinks")}
+          </h2>
           {socialLinks.map((link, index) => (
             <a
               key={index}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-gray-800 rounded-lg p-4 sm:p-6 border border-yellow-400 hover:border-yellow-300 hover:bg-gray-700 transition-all duration-300 transform hover:scale-105"
+              className="group bg-gray-800 rounded-lg p-4 sm:p-6 border border-yellow-400 hover:border-yellow-300 hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-1 focus:ring-yellow-400 focus:ring-opacity-40 focus:ring-offset-1 focus:ring-offset-gray-800"
+              aria-label={`Visit our ${link.name} page`}
             >
               <div className="text-center">
                 <div className="mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300 flex justify-center">
@@ -82,18 +91,18 @@ const Support: React.FC = () => {
               </div>
             </a>
           ))}
-        </div>
+        </section>
 
-        <div className="mt-12 sm:mt-16 bg-gray-800 rounded-lg p-6 sm:p-8 border border-yellow-400">
+        <section className="mt-12 sm:mt-16 bg-gray-800 rounded-lg p-6 sm:p-8 border border-yellow-400">
           <div className="text-center">
-            <h3 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3 sm:mb-4">
+            <h2 className="text-xl sm:text-2xl font-bold text-yellow-400 mb-3 sm:mb-4">
               {t("support.thankYou.title")}
-            </h3>
+            </h2>
             <p className="text-gray-300 text-lg sm:text-xl px-4">
               {t("support.thankYou.description")}
             </p>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

@@ -83,7 +83,7 @@ describe("Home", () => {
     );
 
     featureCards.forEach((card) => {
-      const cardContainer = card.closest("div");
+      const cardContainer = card.closest("article");
       expect(cardContainer).toHaveClass(
         "bg-gray-800",
         "rounded-lg",
