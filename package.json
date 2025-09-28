@@ -1,9 +1,9 @@
 {
   "name": "sph-sq-rules",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
-  "author": "Alejandro L. Herrero <alejandrolhc@gmail.com>",
+  "author": "Alejandro L. Herrero @AlejandroLuisHC <alejandrolhc@gmail.com>",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
