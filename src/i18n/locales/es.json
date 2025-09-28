@@ -59,7 +59,7 @@
   },
   "sections": {
     "general": {
-      "title": "Normas Generales / General Rules",
+      "title": "Normas Generales",
       "rules": [
         "Respeto y buena conducta: Cero tolerancia a faltas de respeto, toxicidad, racismo, xenofobia o ataques personales. ¡También aplica al chat de comandancia! Queremos una comunidad sana.",
         "Uso del tag SPH: Solo los miembros oficiales de la comunidad pueden usar el tag SPH. El uso indebido implica kick o ban.",
@@ -74,7 +74,7 @@
       ]
     },
     "squad": {
-      "title": "Reglas para Escuadrones / Squad Rules",
+      "title": "Reglas para Escuadrones",
       "rules": [
         "Líder con micrófono: El uso de micrófono es obligatorio para todos los líderes de escuadra (SL).",
         "Idiomas: Si lideras en un idioma distinto al español, indícalo en el nombre del escuadrón.",
@@ -84,7 +84,7 @@
       ]
     },
     "infantry": {
-      "title": "Reglas para Infantería / Infantry Rules",
+      "title": "Reglas para Infantería",
       "rules": [
         "Escuadras sin SL funcional: Las escuadras sin líder con kit de SL o sin micrófono serán disueltas por los admins. Podrás cambiarte el kit para situaciones específicas (ej. salvar una radio, AT para un vehículo cerca del HAB, etc).",
         "Prohibido crear escuadras sin líder: Si creas una escuadra y no lideras, serás baneado.",
@@ -93,7 +93,7 @@
       ]
     },
     "vehicles": {
-      "title": "Vehículos / Vehicles",
+      "title": "Vehículos",
       "rules": [
         "Helicópteros: Solo pueden ser ocupados por 1 a 2 personas, para miembros de SPH hasta 4 personas. El helicóptero priorizará las necesidades del equipo antes que la de su squad.",
         "Un vehículo especializado por escuadra: No puedes usar más de un blindado o helicóptero a la vez por escuadra.",
