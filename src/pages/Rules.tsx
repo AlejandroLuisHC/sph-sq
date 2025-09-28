@@ -8,11 +8,11 @@ const Rules: React.FC = () => {
 
   return (
     <div className="py-8 sm:py-12 lg:py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-5 md:px-8">
+      <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 text-center mb-8 sm:mb-12 uppercase tracking-wide px-4">
           {t("nav.rules")}
         </h2>
-        <div className="flex flex-col gap-4 sm:gap-5">
+        <div className="rule-container flex flex-col gap-4 sm:gap-5">
           <RuleSection sectionKey="general" isExpanded={true}>
             <RuleList sectionKey="general" />
           </RuleSection>
