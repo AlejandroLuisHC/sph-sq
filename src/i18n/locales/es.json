@@ -1,0 +1,139 @@
+{
+  "title": "Reglas del Servidor SPH Squad",
+  "language": "Idioma",
+  "nav": {
+    "home": "Inicio",
+    "rules": "Reglas",
+    "sanctions": "Tabla de Sanciones",
+    "support": "Soporte"
+  },
+  "home": {
+    "description": "Bienvenido al servidor SPH Squad. Aquí encontrarás todas las reglas y directrices para una experiencia de juego justa y divertida para todos los jugadores.",
+    "features": {
+      "rules": {
+        "title": "Reglas Completas",
+        "description": "Todas las reglas del servidor organizadas por categorías para fácil consulta."
+      },
+      "community": {
+        "title": "Comunidad Activa",
+        "description": "Un servidor con una comunidad respetuosa y administradores comprometidos."
+      },
+      "support": {
+        "title": "Soporte 24/7",
+        "description": "Sistema de reportes y soporte para mantener un ambiente de juego saludable."
+      }
+    }
+  },
+  "sanctions": {
+    "description": "Esta sección contendrá la tabla de sanciones aplicables en el servidor. Próximamente disponible.",
+    "comingSoon": {
+      "title": "Próximamente",
+      "description": "Estamos trabajando en una tabla completa de sanciones que estará disponible pronto."
+    },
+    "features": {
+      "title": "Características que incluirá:",
+      "sanctions": "Tabla de sanciones por tipo de infracción",
+      "appeals": "Sistema de apelaciones",
+      "reports": "Historial de reportes",
+      "history": "Registro de sanciones administrativas"
+    }
+  },
+  "support": {
+    "description": "¡Únete a nuestra comunidad y apóyanos en nuestras plataformas! Conecta con otros jugadores, sigue nuestros streams y contribuye al crecimiento del servidor.",
+    "discord": {
+      "description": "Únete a nuestro servidor de Discord para chatear, organizar partidas y estar al día con las novedades."
+    },
+    "twitch": {
+      "description": "Síguenos en Twitch para ver streams en vivo, partidas épicas y contenido exclusivo de SPH."
+    },
+    "patreon": {
+      "description": "Apoya el servidor y obtén beneficios exclusivos como acceso prioritario y contenido especial."
+    },
+    "youtube": {
+      "description": "Suscríbete a nuestro canal de YouTube para ver highlights, tutoriales y contenido de la comunidad."
+    },
+    "thankYou": {
+      "title": "¡Gracias por tu apoyo!",
+      "description": "Tu apoyo nos ayuda a mantener el servidor funcionando y a crear una mejor experiencia para toda la comunidad SPH."
+    }
+  },
+  "sections": {
+    "general": {
+      "title": "Normas Generales / General Rules",
+      "rules": [
+        "Respeto y buena conducta: Cero tolerancia a faltas de respeto, toxicidad, racismo, xenofobia o ataques personales. ¡También aplica al chat de comandancia! Queremos una comunidad sana.",
+        "Uso del tag SPH: Solo los miembros oficiales de la comunidad pueden usar el tag SPH. El uso indebido implica kick o ban.",
+        "Prohibido el reclutamiento externo: No se permite promocionar otras comunidades o clanes. Esto también conlleva permaban.",
+        "Comunicación clara: Evita ruidos molestos, música o interrupciones en momentos clave. Está prohibido todo contenido sexual, político, racista o de odio.",
+        "Teamkills: Si matas a un compañero por error, discúlpate en el ALLCHAT con: \"sorry tk\".",
+        "Obedece la cadena de mando: Respeta las órdenes de jugadores con rango superior o rol de liderazgo. No respetarlos y afectar la experiencia de juego por esto, conllevará a sanción.",
+        "Reportes serios: Haz reportes justificados y con pruebas. El mal uso del comando !ADMIN será sancionado.",
+        "Roles especializados: No tomes roles como comandante, zapador, piloto o HAT si no sabes usarlos correctamente. Jugar en equipo requiere compromiso.",
+        "Respeta al staff: Los administradores están para ayudar y mantener el orden. Si te llaman la atención, coopera.",
+        "Las decisiones del staff se respetan: Puedes apelar en Discord si crees que una sanción fue injusta, pero no armes escándalo en partida."
+      ]
+    },
+    "squad": {
+      "title": "Reglas para Escuadrones / Squad Rules",
+      "rules": [
+        "Líder con micrófono: El uso de micrófono es obligatorio para todos los líderes de escuadra (SL).",
+        "Idiomas: Si lideras en un idioma distinto al español, indícalo en el nombre del escuadrón.",
+        "Únete a algún escuadrón: Tienes 5 minutos desde que entras al servidor para unirte a un escuadrón o serás expulsado.",
+        "CMD reservado: El rol de Commander está limitado a escuadras de infantería. No está permitido para blindados ni helicópteros.",
+        "Artillería: No uses artillería sin avisar. Si matas aliados sin comunicarlo, serás sancionado."
+      ]
+    },
+    "infantry": {
+      "title": "Reglas para Infantería / Infantry Rules",
+      "rules": [
+        "Escuadras sin SL funcional: Las escuadras sin líder con kit de SL o sin micrófono serán disueltas por los admins. Podrás cambiarte el kit para situaciones específicas (ej. salvar una radio, AT para un vehículo cerca del HAB, etc).",
+        "Prohibido crear escuadras sin líder: Si creas una escuadra y no lideras, serás baneado.",
+        "Requisitos mínimos: Se necesitan al menos 5 jugadores para mantener una escuadra de infantería, salvo escuadras con roles específicos. Para miembros SPH podrán cerrarse hasta 3 miembros, con un máximo de 3 escuadras por equipo, teniendo prioridad las 3 primeras en enumeración y con el título de SPH o Special Unit.",
+        "Prioridad en uso de HAT/AT: La infantería tiene prioridad en el uso de HAT y AT. Si nadie lo está usando puedes tomarlo, pero si alguien de infantería lo reclama, deberás cederlo."
+      ]
+    },
+    "vehicles": {
+      "title": "Vehículos / Vehicles",
+      "rules": [
+        "Helicópteros: Solo pueden ser ocupados por 1 a 2 personas, para miembros de SPH hasta 4 personas. El helicóptero priorizará las necesidades del equipo antes que la de su squad.",
+        "Un vehículo especializado por escuadra: No puedes usar más de un blindado o helicóptero a la vez por escuadra.",
+        "Reclamo de vehículos (claim): El nombre de la escuadra debe estar claramente indicado con el nombre del vehículo (ej.: M2A3, BMP1, Mi-8, LAV25...). En layers donde sólo haya un modelo de esa variante, no hará falta especificar el número, sólo el modelo.",
+        "One manning: Todos los vehículos que necesitan claim no se pueden monotripular, a excepción del helicóptero, TOW y artillería.",
+        "¿Qué vehículos requieren claim?: Todos los que usen crewman, además de helicópteros, artillería móvil y TOW.",
+        "Prioridad de uso: Puede haber varias escuadras con el mismo tipo de vehículo. Se lo llevará quien tenga el mínimo de integrantes (2) y lleve más tiempo en Main (a partir del tiempo de preparación). Si al inicio de partida hay varias escuadras creadas con el mínimo de crewman necesario, lo gana la escuadra más rápida. ¡Corre!",
+        "Wasting Assets: Se considera wasting asset cualquier recurso que se desperdicie de forma innecesaria durante la partida (helicópteros, logis, blindados, etc.). Su uso debe ser eficiente y responsable; el desperdicio injustificado podrá ser sancionado.",
+        "Exclusividad de roles: Si formas parte de una escuadra con vehículo en claim, no puedes coger otros vehículos como logístico, transporte o RWS."
+      ]
+    },
+    "fobs": {
+      "title": "FOBs",
+      "rules": [
+        "FOBs útiles: No pongas FOBs lejos del objetivo sin valor táctico. Las que no tengan uso estratégico serán sancionadas."
+      ]
+    },
+    "mainCamping": {
+      "title": "Main Camping",
+      "rules": [
+        "Camping: Se considera main camping usar vehículos para bloquear, disparar o mantener presión constante sobre el Main enemigo, impidiendo su salida de forma directa y sin intención de moverse o jugar por objetivos. Está prohibido atacar desde o hacia el Main si el enemigo aún no ha podido desplegarse.",
+        "Minas: No se pueden colocar en únicas salidas o a menos de 500 metros del Main enemigo, excepto en los siguientes mapas donde el mínimo es 350 metros: Sumari Bala, Kokan, Chora, Fools Road y Mestia."
+      ]
+    },
+    "seeding": {
+      "title": "Seeding y Miembros SPH",
+      "rules": [
+        "Seeding: El Seeding es el proceso de llenado de un servidor, generalmente a primera hora de la mañana. La única regla o restricción del seeding es que no está permitido ningún tipo de construcción hasta que se abra la partida. Ni si quiera cajas de munición. La única excepción es si un admin decide dejar construir.",
+        "Miembros SPH: Los reclutas y miembros de SPH deben llevar puesto su respectivo tag dentro del juego [SPH-r]/[SPH], configurable desde el mismo no desde Steam. De esta forma podrán beneficiarse del cambio de equipo solo disponible para SPHs y la prioridad a la hora de entrar en las escuadras más organizadas del clan dentro de las partidas.",
+        "Uso indebido de tags: Llevar las siglas [SPH] o [SPH-r] sin pertenecer a la comunidad es considerado una falta grave sancionable."
+      ]
+    },
+    "support": {
+      "title": "Soporte",
+      "rules": [
+        "Contacto con administración: Para contactar con el equipo de administración puede hacerlo por el chat del juego escribiendo !admin y una descripción, ej; !admin el SL de la 2 en el bando ruso no tiene micro ni kit. Tenga en cuenta que es posible que en ese momento no haya ningún administrador jugando en el servidor.",
+        "Reportes serios: De igual modo si es necesario realizar un ban de algún jugador del servidor por temas más serios como racismo, discriminación, etc., se requiere abrir un ticket en nuestro Discord, si es posible aportando pruebas.",
+        "Respeto a decisiones: No discuta el veredicto de un administrador en el juego de ningún modo. Si consideras injusta una acción se puede hablar en el discord mediante un ticket. En nuestros servidores de Squad solo se viene a jugar y pasarlo bien.",
+        "Apelaciones: Para apelar un ban, se requiere abrir un ticket en nuestro Discord."
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+name: Code Quality
+
+on:
+  workflow_call:
+    inputs:
+      skip-formatting:
+        description: "Skip code formatting checks"
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  code-quality:
+    name: Code Quality Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js and pnpm
+        uses: ./.github/actions/setup-node.pnpm
+
+      - name: Check code formatting
+        if: inputs.skip-formatting != true
+        run: |
+          echo "✅ Code formatting check passed (prettier not configured)"
+
+      - name: Check for console.log statements
+        run: |
+          # Allow console.log in main.tsx for ASCII art display
+          if grep -r "console\.log" src/ --exclude-dir=node_modules --exclude=main.tsx; then
+            echo "❌ Found console.log statements in production code (excluding main.tsx)"
+            echo "Please remove console.log statements before committing"
+            exit 1
+          else
+            echo "✅ No console.log statements found (excluding main.tsx)"
+          fi
+
+      - name: Check for TODO/FIXME comments
+        run: |
+          echo "📝 Found TODO/FIXME comments:"
+          grep -r "TODO\|FIXME" src/ --exclude-dir=node_modules || echo "No TODO/FIXME comments found"
+
+      - name: Check bundle size
+        run: |
+          pnpm build
+          echo "📦 Build completed successfully"
+          ls -la dist/

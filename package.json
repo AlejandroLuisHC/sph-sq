@@ -1,0 +1,49 @@
+{
+  "name": "sph-sq-rules",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "author": "Alejandro L. Herrero <alejandrolhc@gmail.com>",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:cover": "vitest run --coverage",
+    "check:translations": "node -e \"const fs=require('fs'); const es=JSON.parse(fs.readFileSync('src/i18n/locales/es.json','utf8')); const en=JSON.parse(fs.readFileSync('src/i18n/locales/en.json','utf8')); const esKeys=Object.keys(es).sort(); const enKeys=Object.keys(en).sort(); if(JSON.stringify(esKeys)!==JSON.stringify(enKeys)){console.error('Translation keys mismatch!'); process.exit(1);} console.log('✅ Translation keys match');\"",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "i18next": "^23.7.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.5.0",
+    "react-router-dom": "^7.9.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "jsdom": "^27.0.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vitest": "^3.2.4"
+  }
+}
