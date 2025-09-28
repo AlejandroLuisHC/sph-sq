@@ -5,7 +5,7 @@
     "home": "Home",
     "rules": "Rules",
     "sanctions": "Sanctions Table",
-    "support": "Support"
+    "support": "Social Media"
   },
   "home": {
     "description": "Welcome to the SPH Squad server. Here you'll find all the rules and guidelines for a fair and fun gaming experience for all players.",
@@ -19,7 +19,7 @@
         "description": "A server with a respectful community and committed administrators."
       },
       "support": {
-        "title": "24/7 Support",
+        "title": "24/7 Social Media",
         "description": "Reporting system and support to maintain a healthy gaming environment."
       }
     }
@@ -127,7 +127,7 @@
       ]
     },
     "support": {
-      "title": "Support",
+      "title": "Social Media",
       "rules": [
         "Contact with administration: To contact the administration team, you can do so through the game chat by typing !admin and a description, e.g.; !admin the SL of squad 2 on the Russian side has no mic or kit. Please note that there may not be any administrator playing on the server at that time.",
         "Serious reports: Similarly, if it is necessary to ban a player from the server for more serious issues such as racism, discrimination, etc., you must open a ticket on our Discord, if possible providing evidence.",
