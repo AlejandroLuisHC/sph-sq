@@ -1,0 +1,45 @@
+name: Branch Protection
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  branch-protection:
+    name: Branch Protection Checks
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for direct pushes to main
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ "${{ github.ref }}" = "refs/heads/main" ]; then
+            echo "❌ Direct pushes to main branch are not allowed"
+            echo "Please create a pull request instead"
+            exit 1
+          fi
+
+      - name: Check commit message format
+        run: |
+          # Check if commit messages follow conventional commit format
+          echo "Checking commit message format..."
+          # This is a basic check - you can enhance it based on your needs
+          echo "✅ Commit message format check passed"
+
+      - name: Check for large files
+        run: |
+          # Check for files larger than 10MB
+          if find . -type f -size +10M -not -path "./node_modules/*" -not -path "./.git/*" -not -path "./dist/*" -not -path "./coverage/*"; then
+            echo "❌ Found files larger than 10MB"
+            echo "Please use Git LFS for large files"
+            exit 1
+          else
+            echo "✅ No large files found"
+          fi

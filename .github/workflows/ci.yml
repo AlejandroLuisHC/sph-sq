@@ -21,10 +21,15 @@ jobs:
     secrets:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
+  # Code quality checks
+  code-quality:
+    name: Code Quality Checks
+    uses: ./.github/workflows/code-quality.yml
+
   # Build job
   build:
     name: Build
-    needs: quality
+    needs: [quality, code-quality]
     uses: ./.github/workflows/build.yml
     with:
       upload-artifacts: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}

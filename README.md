@@ -1,113 +1,91 @@
-# SPH Squad Rules Landing Page
+# SPH Squad Server Rules
 
-A modern, responsive landing page for displaying video game server rules with internationalization support.
+A responsive web application for displaying SPH Squad server rules and guidelines with bilingual support.
 
 ## Features
 
-- 🌍 **Internationalization**: Spanish (default) and English support
-- 📱 **Responsive Design**: Works on desktop, tablet, and mobile devices
-- 🎨 **Modern UI**: Dark theme with yellow accents inspired by gaming aesthetics
-- ⚡ **Fast**: Built with Vite for optimal performance
-- 🔧 **TypeScript**: Full type safety and better development experience
-- 📦 **Easy to Manage**: Simple structure for easy content updates
+- **Bilingual Support**: Spanish (default) and English
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Modern UI**: Dark theme
+- **Fast Performance**: Built with Vite and React 18
+- **Type Safety**: Full TypeScript implementation
 
 ## Tech Stack
 
-- **React 18** - UI framework
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **React i18next** - Internationalization
-- **Tailwind CSS** - Utility-first CSS framework
+- React 18 + TypeScript
+- Vite (build tool)
+- Tailwind CSS (styling)
+- React i18next (internationalization)
+- React Router DOM (routing)
 
-## Getting Started
+## Quick Start
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- pnpm (recommended) or npm
+- Node.js 18+
+- pnpm
 
 ### Installation
-
-1. Clone the repository:
 
 ```bash
 git clone <repository-url>
 cd sph-sq-rules
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-or
 pnpm install
-```
-
-3. Start the development server:
-
-```bash
-npm run dev
-or
 pnpm dev
 ```
 
-4. Open your browser and navigate to `http://localhost:3000`
+Open `http://localhost:3000` in your browser.
 
-### Building for Production
+### Build
 
 ```bash
-npm run build
-or
 pnpm build
 ```
-
-The built files will be in the `dist` directory.
 
 ## Project Structure
 
 ```
 src/
-├── components/          # React components
-│   ├── LanguageSelector.tsx
-│   ├── RuleSection.tsx
-│   └── RuleList.tsx
+├── components/          # Reusable components
+│   ├── Header.tsx      # Navigation and language selector
+│   ├── RuleSection.tsx # Collapsible rule sections
+│   ├── RuleList.tsx    # Rule list display
+│   └── __tests__/      # Component tests
+├── pages/              # Route components
+│   ├── Home.tsx
+│   ├── Rules.tsx
+│   ├── Sanctions.tsx
+│   ├── Support.tsx
+│   └── __tests__/      # Page tests
 ├── i18n/               # Internationalization
 │   ├── index.ts
-│   └── locales/
-│       ├── es.json     # Spanish translations
-│       └── en.json     # English translations
-├── App.tsx             # Main app component
-├── main.tsx            # Entry point
-└── index.css           # Global styles
+│   ├── locales/
+│   │   ├── es.json     # Spanish translations
+│   │   └── en.json     # English translations
+│   └── __tests__/      # i18n tests
+├── __tests__/          # App-level tests
+├── assets/             # Images and icons
+├── test/               # Test setup
+├── App.tsx             # Main application
+└── main.tsx            # Entry point
 ```
 
-## Customization
+## Development
 
-### Adding New Rules
+### Available Scripts
 
-1. Edit the translation files in `src/i18n/locales/`
-2. Add new rule sections to both `es.json` and `en.json`
-3. Update the `App.tsx` component to include new `RuleSection` components
+- `pnpm dev` - Development server
+- `pnpm build` - Production build
+- `pnpm test` - Run tests
+- `pnpm test:coverage` - Test coverage report
+- `pnpm lint` - Code linting
 
-### Styling
+### Adding Content
 
-- Global styles: `src/index.css` (includes Tailwind directives)
-- Component styles: All styling is done with Tailwind utility classes
-- Custom colors: Defined in `tailwind.config.js`
-
-### Adding New Languages
-
-1. Create a new translation file in `src/i18n/locales/`
-2. Add the language to the `resources` object in `src/i18n/index.ts`
-3. Update the `LanguageSelector` component to include the new language
-
-## Scripts
-
-- `pnpm dev` - Start development server
-- `pnpm build` - Build for production
-- `pnpm preview` - Preview production build
-- `pnpm lint` - Run ESLint
+1. Edit translation files in `src/i18n/locales/`
+2. Update both `es.json` and `en.json` files
+3. Add new pages in `src/pages/` if needed
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License
