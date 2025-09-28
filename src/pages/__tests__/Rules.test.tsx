@@ -41,7 +41,9 @@ vi.mock("../../components/RuleList", () => ({
 describe("Rules", () => {
   it("renders the rules title", () => {
     render(<Rules />);
-    expect(screen.getByText("Rules")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Rules" })
+    ).toBeInTheDocument();
   });
 
   it("renders all rule sections", () => {
@@ -90,22 +92,23 @@ describe("Rules", () => {
 
   it("applies correct styling to title", () => {
     render(<Rules />);
-    const title = screen.getByText("Rules");
+    const title = screen.getByRole("heading", { level: 1, name: "Rules" });
     expect(title).toHaveClass(
       "text-2xl",
       "sm:text-3xl",
       "md:text-4xl",
       "font-bold",
       "text-yellow-400",
-      "text-center",
       "uppercase",
-      "tracking-wide"
+      "tracking-wide",
+      "px-4"
     );
   });
 
   it("has proper container structure", () => {
     render(<Rules />);
-    const container = screen.getByText("Rules").closest("div");
+    const title = screen.getByRole("heading", { level: 1, name: "Rules" });
+    const container = title.closest("div");
     expect(container).toBeInTheDocument();
   });
 });

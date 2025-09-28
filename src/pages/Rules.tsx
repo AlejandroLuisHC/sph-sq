@@ -9,10 +9,18 @@ const Rules: React.FC = () => {
   return (
     <div className="py-8 sm:py-12 lg:py-16">
       <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 text-center mb-8 sm:mb-12 uppercase tracking-wide px-4">
-          {t("nav.rules")}
-        </h2>
-        <div className="rule-container flex flex-col gap-4 sm:gap-5">
+        <header className="text-center mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400 uppercase tracking-wide px-4">
+            {t("nav.rules")}
+          </h1>
+        </header>
+        <section
+          className="rule-container flex flex-col gap-4 sm:gap-5 p-1"
+          aria-labelledby="rules-heading"
+        >
+          <h2 id="rules-heading" className="sr-only">
+            {t("nav.rules")}
+          </h2>
           <RuleSection sectionKey="general" isExpanded={true}>
             <RuleList sectionKey="general" />
           </RuleSection>
@@ -44,7 +52,7 @@ const Rules: React.FC = () => {
           <RuleSection sectionKey="support">
             <RuleList sectionKey="support" />
           </RuleSection>
-        </div>
+        </section>
       </div>
     </div>
   );
