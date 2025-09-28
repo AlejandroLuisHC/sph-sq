@@ -75,16 +75,16 @@ describe("Sanctions", () => {
 
   it("applies correct styling to title", () => {
     render(<Sanctions />);
-    const title = screen.getByText("Sanctions");
+    const title = screen.getByRole("heading", { level: 1, name: "Sanctions" });
     expect(title).toHaveClass(
       "text-2xl",
       "sm:text-3xl",
       "md:text-4xl",
       "font-bold",
       "text-yellow-400",
-      "text-center",
       "uppercase",
-      "tracking-wide"
+      "tracking-wide",
+      "px-4"
     );
   });
 

@@ -10,6 +10,7 @@
   "home": {
     "description": "Welcome to the SPH Squad server. Here you'll find all the rules and guidelines for a fair and fun gaming experience for all players.",
     "features": {
+      "title": "Features",
       "rules": {
         "title": "Complete Rules",
         "description": "All server rules organized by categories for easy reference."
@@ -40,6 +41,7 @@
   },
   "support": {
     "description": "Join our community and support us on our platforms! Connect with other players, follow our streams, and contribute to the server's growth.",
+    "socialLinks": "Social Media Links",
     "discord": {
       "description": "Join our Discord server to chat, organize games, and stay updated with the latest news."
     },

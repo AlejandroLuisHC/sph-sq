@@ -20,10 +20,12 @@ const RuleSection: React.FC<RuleSectionProps> = ({
   };
 
   return (
-    <div className="mb-6 sm:mb-8">
-      <div
-        className="flex items-center justify-between cursor-pointer py-3 sm:py-4 transition-all duration-300 hover:opacity-80"
+    <section className="mb-6 sm:mb-8">
+      <button
+        className="w-full flex items-center justify-between cursor-pointer py-3 sm:py-4 transition-all duration-300 hover:opacity-80 focus:outline-none focus:ring-1 focus:ring-yellow-400 focus:ring-opacity-40 focus:ring-offset-1 focus:ring-offset-gray-900 rounded-md"
         onClick={toggleExpanded}
+        aria-expanded={expanded}
+        aria-controls={`rule-section-${sectionKey}`}
       >
         <div className="flex items-center flex-1 gap-2 sm:gap-4">
           <div className="h-0.5 bg-yellow-400 flex-1 hidden sm:block"></div>
@@ -36,17 +38,21 @@ const RuleSection: React.FC<RuleSectionProps> = ({
           className={`text-yellow-400 text-sm sm:text-base font-bold transition-transform duration-300 ml-2 sm:ml-5 ${
             expanded ? "rotate-180" : ""
           }`}
+          aria-hidden="true"
         >
           ▼
         </div>
-      </div>
+      </button>
 
       {expanded && (
-        <div className="py-3 sm:py-5 animate-in slide-in-from-top-2 duration-300">
+        <div
+          id={`rule-section-${sectionKey}`}
+          className="py-3 sm:py-5 animate-in slide-in-from-top-2 duration-300"
+        >
           {children}
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
