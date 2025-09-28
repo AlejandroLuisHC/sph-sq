@@ -1,0 +1,47 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  code-quality:
+    name: Code Quality Checks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js and pnpm
+        uses: ./.github/actions/setup-node.pnpm
+
+      - name: Check code formatting
+        run: |
+          # Check if code is properly formatted
+          echo "Checking code formatting..."
+          # Add prettier check if you want to enforce formatting
+          # pnpm prettier --check .
+
+      - name: Check for console.log statements
+        run: |
+          if grep -r "console\.log" src/ --exclude-dir=node_modules; then
+            echo "❌ Found console.log statements in production code"
+            echo "Please remove console.log statements before committing"
+            exit 1
+          else
+            echo "✅ No console.log statements found"
+          fi
+
+      - name: Check for TODO/FIXME comments
+        run: |
+          echo "📝 Found TODO/FIXME comments:"
+          grep -r "TODO\|FIXME" src/ --exclude-dir=node_modules || echo "No TODO/FIXME comments found"
+
+      - name: Check bundle size
+        run: |
+          pnpm build
+          echo "📦 Build completed successfully"
+          ls -la dist/

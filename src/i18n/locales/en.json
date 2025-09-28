@@ -1,0 +1,139 @@
+{
+  "title": "SPH Squad Server Rules",
+  "language": "Language",
+  "nav": {
+    "home": "Home",
+    "rules": "Rules",
+    "sanctions": "Sanctions Table",
+    "support": "Support"
+  },
+  "home": {
+    "description": "Welcome to the SPH Squad server. Here you'll find all the rules and guidelines for a fair and fun gaming experience for all players.",
+    "features": {
+      "rules": {
+        "title": "Complete Rules",
+        "description": "All server rules organized by categories for easy reference."
+      },
+      "community": {
+        "title": "Active Community",
+        "description": "A server with a respectful community and committed administrators."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Reporting system and support to maintain a healthy gaming environment."
+      }
+    }
+  },
+  "sanctions": {
+    "description": "This section will contain the table of sanctions applicable on the server. Coming soon.",
+    "comingSoon": {
+      "title": "Coming Soon",
+      "description": "We are working on a complete table of sanctions that will be available soon."
+    },
+    "features": {
+      "title": "Features it will include:",
+      "sanctions": "Sanctions table by type of violation",
+      "appeals": "Appeals system",
+      "reports": "Reports history",
+      "history": "Administrative sanctions record"
+    }
+  },
+  "support": {
+    "description": "Join our community and support us on our platforms! Connect with other players, follow our streams, and contribute to the server's growth.",
+    "discord": {
+      "description": "Join our Discord server to chat, organize games, and stay updated with the latest news."
+    },
+    "twitch": {
+      "description": "Follow us on Twitch to watch live streams, epic gameplay, and exclusive SPH content."
+    },
+    "patreon": {
+      "description": "Support the server and get exclusive benefits like priority access and special content."
+    },
+    "youtube": {
+      "description": "Subscribe to our YouTube channel to watch highlights, tutorials, and community content."
+    },
+    "thankYou": {
+      "title": "Thank you for your support!",
+      "description": "Your support helps us keep the server running and create a better experience for the entire SPH community."
+    }
+  },
+  "sections": {
+    "general": {
+      "title": "General Rules / Normas Generales",
+      "rules": [
+        "Respect and good conduct: Zero tolerance for disrespect, toxicity, racism, xenophobia, or personal attacks. This also applies to the command chat! We want a healthy community.",
+        "Use of the SPH tag: Only official community members can use the SPH tag. Improper use will result in a kick or ban.",
+        "External recruitment is forbidden: Promoting other communities or clans is not allowed. This will also result in a permanent ban.",
+        "Clear communication: Avoid disruptive noises, music, or interruptions at key moments. Any sexual, political, racist, or hateful content is prohibited.",
+        "Teamkills: If you kill a teammate by mistake, apologize in ALLCHAT with: \"sorry tk\".",
+        "Obey the chain of command: Respect the orders of players with higher rank or leadership roles. Failing to do so and affecting the gameplay experience will result in sanctions.",
+        "Serious reports: Submit justified reports with evidence. Misuse of the !ADMIN command will be sanctioned.",
+        "Specialized roles: Do not take roles such as commander, sapper, pilot, or HAT if you do not know how to use them properly. Team play requires commitment.",
+        "Respect the staff: Admins are here to help and maintain order. If they call you out, cooperate.",
+        "Staff decisions must be respected: You can appeal on Discord if you believe a sanction was unfair, but do not cause drama in-game."
+      ]
+    },
+    "squad": {
+      "title": "Squad Rules / Reglas para Escuadrones",
+      "rules": [
+        "Squad leader with mic: A microphone is mandatory for all squad leaders (SL).",
+        "Languages: If you lead in a language other than Spanish, indicate it in the squad name.",
+        "Join a squad: You have 5 minutes after joining the server to join a squad or you will be kicked.",
+        "CMD reserved: The Commander role is limited to infantry squads. It is not allowed for armor or helicopter squads.",
+        "Artillery: Do not use artillery without warning. If you kill allies without communicating, you will be sanctioned."
+      ]
+    },
+    "infantry": {
+      "title": "Infantry Rules / Reglas para Infantería",
+      "rules": [
+        "Squads without functional SL: Squads without a leader using the SL kit or without a microphone will be disbanded by admins. You may switch kits for specific situations (e.g., saving a radio, using AT against a vehicle near the HAB, etc.).",
+        "Creating squads without leading is forbidden: If you create a squad and do not lead it, you will be banned.",
+        "Minimum requirements: At least 5 players are required to keep an infantry squad, except for squads with specific roles. For SPH members, a squad may remain closed with a minimum of 3 members, with a maximum of 3 squads per team. Priority goes to the first 3 squads in numbering, with the title SPH or Special Unit.",
+        "Priority in HAT/AT usage: Infantry has priority in using HAT and AT. If nobody is using it, you may take it, but if an infantry player claims it, you must give it up."
+      ]
+    },
+    "vehicles": {
+      "title": "Vehicles / Vehículos",
+      "rules": [
+        "Helicopters: They can only be crewed by 1 to 2 people; for SPH members, up to 4 people. The helicopter must prioritize the needs of the team over those of its squad.",
+        "One specialized vehicle per squad: You cannot use more than one armored vehicle or helicopter per squad at the same time.",
+        "Vehicle claim: The squad name must clearly indicate the vehicle type (e.g., M2A3, BMP1, Mi-8, LAV25...). In layers with only one model of that variant, it is not necessary to specify the number, only the model.",
+        "One manning: All vehicles that require a claim cannot be single-crewed, except helicopters, TOW, and artillery.",
+        "Which vehicles require a claim?: All vehicles that require crewman, plus helicopters, mobile artillery, and TOW.",
+        "Usage priority: There may be several squads with the same type of vehicle. It will go to the squad with the minimum members (2) that has been in Main the longest (from warm-up). If at the start of the match multiple squads are created with the minimum required crewmen, the fastest squad wins. Run!",
+        "Wasting Assets: Any resource unnecessarily wasted during the match (helicopters, logis, armored vehicles, etc.) is considered wasting assets. Use them efficiently and responsibly; unjustified waste may be sanctioned.",
+        "Role exclusivity: If you are part of a squad with a claimed vehicle, you cannot take other vehicles such as logistic, transport, or RWS."
+      ]
+    },
+    "fobs": {
+      "title": "FOBs",
+      "rules": [
+        "Useful FOBs: Do not place FOBs far from the objective without tactical value. Those without strategic use will be sanctioned."
+      ]
+    },
+    "mainCamping": {
+      "title": "Main Camping",
+      "rules": [
+        "Camping: Main camping is using vehicles to block, fire, or keep constant pressure on the enemy Main, preventing their exit directly and without the intention of moving or playing objectives. Attacking from or towards Main is forbidden if the enemy has not yet deployed.",
+        "Mines: Mines cannot be placed at the only exits or within 500 meters of the enemy Main, except on the following maps where the minimum is 350 meters: Sumari Bala, Kokan, Chora, Fools Road, and Mestia."
+      ]
+    },
+    "seeding": {
+      "title": "Seeding and SPH Members",
+      "rules": [
+        "Seeding: Seeding is the process of filling a server, usually early in the morning. The only rule or restriction of seeding is that no type of construction is allowed until the match opens. Not even ammunition boxes. The only exception is if an admin decides to allow construction.",
+        "SPH Members: Recruits and SPH members must wear their respective tag in-game [SPH-r]/[SPH], configurable from the game itself, not from Steam. This way they can benefit from team switching only available for SPHs and priority when entering the most organized squads of the clan during matches.",
+        "Improper use of tags: Wearing the initials [SPH] or [SPH-r] without belonging to the community is considered a serious offense that will be sanctioned."
+      ]
+    },
+    "support": {
+      "title": "Support",
+      "rules": [
+        "Contact with administration: To contact the administration team, you can do so through the game chat by typing !admin and a description, e.g.; !admin the SL of squad 2 on the Russian side has no mic or kit. Please note that there may not be any administrator playing on the server at that time.",
+        "Serious reports: Similarly, if it is necessary to ban a player from the server for more serious issues such as racism, discrimination, etc., you must open a ticket on our Discord, if possible providing evidence.",
+        "Respect for decisions: Do not discuss an administrator's verdict in the game in any way. If you consider an action unfair, you can talk about it on Discord through a ticket. On our Squad servers, we only come to play and have fun.",
+        "Appeals: To appeal a ban, you must open a ticket on our Discord."
+      ]
+    }
+  }
+}
