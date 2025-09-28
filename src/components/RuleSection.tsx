@@ -27,7 +27,7 @@ const RuleSection: React.FC<RuleSectionProps> = ({
       >
         <div className="flex items-center flex-1 gap-2 sm:gap-4">
           <div className="h-0.5 bg-yellow-400 flex-1 hidden sm:block"></div>
-          <h2 className="text-gray-300 text-base sm:text-lg font-bold whitespace-nowrap uppercase tracking-wide px-2 sm:px-0">
+          <h2 className="text-gray-300 text-sm sm:text-base md:text-lg font-bold uppercase tracking-wide px-2 sm:px-0 text-center flex-1 min-w-0">
             {t(`sections.${sectionKey}.title`)}
           </h2>
           <div className="h-0.5 bg-yellow-400 flex-1 hidden sm:block"></div>
