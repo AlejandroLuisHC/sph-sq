@@ -5,7 +5,7 @@
     "home": "Inicio",
     "rules": "Reglas",
     "sanctions": "Tabla de Sanciones",
-    "support": "Soporte"
+    "support": "RRSS"
   },
   "home": {
     "description": "Bienvenido al servidor SPH Squad. Aquí encontrarás todas las reglas y directrices para una experiencia de juego justa y divertida para todos los jugadores.",
@@ -19,7 +19,7 @@
         "description": "Un servidor con una comunidad respetuosa y administradores comprometidos."
       },
       "support": {
-        "title": "Soporte 24/7",
+        "title": "RRSS 24/7",
         "description": "Sistema de reportes y soporte para mantener un ambiente de juego saludable."
       }
     }
@@ -127,7 +127,7 @@
       ]
     },
     "support": {
-      "title": "Soporte",
+      "title": "RRSS",
       "rules": [
         "Contacto con administración: Para contactar con el equipo de administración puede hacerlo por el chat del juego escribiendo !admin y una descripción, ej; !admin el SL de la 2 en el bando ruso no tiene micro ni kit. Tenga en cuenta que es posible que en ese momento no haya ningún administrador jugando en el servidor.",
         "Reportes serios: De igual modo si es necesario realizar un ban de algún jugador del servidor por temas más serios como racismo, discriminación, etc., se requiere abrir un ticket en nuestro Discord, si es posible aportando pruebas.",
