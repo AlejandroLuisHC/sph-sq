@@ -49,4 +49,27 @@
     background: #ffd700;
     color: #1a1a1a;
   }
+
+  /* Background logo styling for better cross-browser compatibility */
+  .bg-logo {
+    opacity: 0.03 !important;
+    filter: blur(0.5px);
+    mix-blend-mode: overlay;
+    /* Fallback for older browsers */
+    -webkit-opacity: 0.03;
+    -moz-opacity: 0.03;
+    /* Ensure it's very subtle */
+    will-change: auto;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Additional fallback for very old mobile browsers */
+  @media screen and (max-width: 768px) {
+    .bg-logo {
+      opacity: 0.02 !important;
+      -webkit-opacity: 0.02;
+      -moz-opacity: 0.02;
+    }
+  }
 }

@@ -37,5 +37,6 @@ export default {
     "bg-gradient-to-br",
     "from-dark-bg",
     "to-dark-secondary",
+    "bg-logo",
   ],
 };
