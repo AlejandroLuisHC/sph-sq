@@ -17,7 +17,7 @@ const App: React.FC = () => {
             <img
               src={sphSpadeLogo}
               alt="SPH Spade Logo Background"
-              className="w-[80vw] h-[80vw] sm:w-[60vw] sm:h-[60vw] md:w-[50vw] md:h-[50vw] lg:w-[40vw] lg:h-[40vw] xl:w-[35vw] xl:h-[35vw] max-w-[800px] max-h-[800px] object-contain opacity-3 sm:opacity-5 md:opacity-8"
+              className="bg-logo w-[80vw] h-[80vw] sm:w-[60vw] sm:h-[60vw] md:w-[50vw] md:h-[50vw] lg:w-[40vw] lg:h-[40vw] xl:w-[35vw] xl:h-[35vw] max-w-[800px] max-h-[800px] object-contain"
             />
           </div>
         </div>
