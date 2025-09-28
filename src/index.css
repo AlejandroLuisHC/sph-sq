@@ -72,4 +72,19 @@
       -moz-opacity: 0.02;
     }
   }
+
+  /* Prevent text overflow and ensure proper wrapping */
+  .rule-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
+  /* Ensure containers don't overflow */
+  .rule-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }

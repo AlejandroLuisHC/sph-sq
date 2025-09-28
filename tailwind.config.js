@@ -38,5 +38,7 @@ export default {
     "from-dark-bg",
     "to-dark-secondary",
     "bg-logo",
+    "rule-text",
+    "rule-container",
   ],
 };

@@ -13,7 +13,7 @@ const RuleList: React.FC<RuleListProps> = ({ sectionKey }) => {
   }) as string[];
 
   return (
-    <div className="flex flex-col gap-2 sm:gap-3">
+    <div className="rule-container flex flex-col gap-2 sm:gap-3">
       {rules.map((rule, index) => (
         <div
           key={index}
@@ -22,7 +22,7 @@ const RuleList: React.FC<RuleListProps> = ({ sectionKey }) => {
           <div className="text-yellow-400 text-sm sm:text-base font-bold mt-0.5 flex-shrink-0">
             ✓
           </div>
-          <div className="text-gray-300 text-sm sm:text-base leading-relaxed flex-1">
+          <div className="rule-text text-gray-300 text-sm sm:text-base leading-relaxed flex-1 break-words overflow-wrap-anywhere">
             {rule}
           </div>
         </div>
