@@ -59,7 +59,7 @@
   },
   "sections": {
     "general": {
-      "title": "General Rules / Normas Generales",
+      "title": "General Rules",
       "rules": [
         "Respect and good conduct: Zero tolerance for disrespect, toxicity, racism, xenophobia, or personal attacks. This also applies to the command chat! We want a healthy community.",
         "Use of the SPH tag: Only official community members can use the SPH tag. Improper use will result in a kick or ban.",
@@ -74,7 +74,7 @@
       ]
     },
     "squad": {
-      "title": "Squad Rules / Reglas para Escuadrones",
+      "title": "Squad Rules",
       "rules": [
         "Squad leader with mic: A microphone is mandatory for all squad leaders (SL).",
         "Languages: If you lead in a language other than Spanish, indicate it in the squad name.",
@@ -84,7 +84,7 @@
       ]
     },
     "infantry": {
-      "title": "Infantry Rules / Reglas para Infantería",
+      "title": "Infantry Rules",
       "rules": [
         "Squads without functional SL: Squads without a leader using the SL kit or without a microphone will be disbanded by admins. You may switch kits for specific situations (e.g., saving a radio, using AT against a vehicle near the HAB, etc.).",
         "Creating squads without leading is forbidden: If you create a squad and do not lead it, you will be banned.",
@@ -93,7 +93,7 @@
       ]
     },
     "vehicles": {
-      "title": "Vehicles / Vehículos",
+      "title": "Vehicles",
       "rules": [
         "Helicopters: They can only be crewed by 1 to 2 people; for SPH members, up to 4 people. The helicopter must prioritize the needs of the team over those of its squad.",
         "One specialized vehicle per squad: You cannot use more than one armored vehicle or helicopter per squad at the same time.",
